@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toolBar1"
+        android:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#001CA6"
+        android:title="Text to Speech App"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/TypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#DDD2D2"
+        android:hint="Enter Any Sentence"
+        android:maxLines="2"
+        android:maxLength="200"
+        android:outlineAmbientShadowColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,TextContrastCheck,UnusedAttribute,VisualLintTextFieldSize"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="201dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/TypeText"
+        android:layout_alignStart="@+id/TypeText"
+        android:layout_alignEnd="@+id/TypeText"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="#0D54CD"
+        android:text="Click Here"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btnClickHere"
+        android:layout_alignStart="@+id/btnClickHere"
+        android:layout_alignEnd="@+id/btnClickHere"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>
